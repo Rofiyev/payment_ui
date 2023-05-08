@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { Navbar, Home, Statistics, Contract, Billing, Business, CTA, Testimonials, Cleints, Footer } from './components';
+import './index.css'
+import { styles } from './util/styles';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-primary w-full overflow-hidden">
+      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.container}`}>
+          <Navbar />
+        </div>
+      </div>
+
+      <div className={`bg-primary ${styles.flexStart}`}>
+        <div className={`${styles.container}`}>
+          <Home />
+        </div>
+      </div>
+
+      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.container}`}>
+          <Statistics />
+          <Contract />
+          <Billing />
+          <Business />
+          <Testimonials />
+          <Cleints />
+          <CTA />
+          <Footer />
+        </div>
+      </div>
+
     </div>
   );
 }
