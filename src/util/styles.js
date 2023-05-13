@@ -8,9 +8,9 @@ const styles = {
   flexCenter: 'flex justify-center items-center',
   flexStart: 'flex justify-center items-start',
   flexBetween: 'flex justify-between items-center',
-  paragraph: 'font-montserrat font-normal text-lightWhite text-[18px]',
-  heading_1: 'font-montserrat font-semibold md:text-[72px] text-[52px] text-white sm:leading-[100px] leading-[60px]',
-  heading_2: 'font-montserrat font-semibold xs:text-[42px] text-[34px] text-white xs:leading-[76.8px] leading-[66.8px] w-full',
+  paragraph: 'font-montserrat font-normal text-lightWhite text-[16px]',
+  heading_1: 'font-montserrat font-semibold md:text-[72px] text-[42px] text-white sm:leading-[100px] leading-[60px]',
+  heading_2: 'font-montserrat font-semibold xs:text-[42px] text-[24px] text-white xs:leading-[76.8px] leading-[45px] w-full',
 }
 
 

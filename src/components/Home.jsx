@@ -7,7 +7,7 @@ import Button from './Button';
 
 const Home = () => {
   return (
-    <section id='home' className={`flex lg:flex-row flex-col ${styles.paddingY}`}>
+    <section id='home' className={`flex lg:flex-row flex-col pb-10 ${styles.paddingY}`}>
       {/* Info */}
       <div className={`flex-1 md:order-1 order-2 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
         <div className={`flex flex-row items-center gap-3 py-[6px] px-4 rounded-[10px] mb-2 bg-discount-gradient `}>

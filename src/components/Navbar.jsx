@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <div className={`w-full py-6 text-white ${styles.flexBetween}`}>
       {/* === Logo === */}
-      <img className={`w-[110px] h-[65px] object-cover cursor-pointer`} src={logo} alt="Logo" />
+      <img className={`w-[110px] h-[65px] object-cover cursor-pointer relative z-50`} src={logo} alt="Logo" />
 
       {/* === Header Links === */}
       <ul className="list-none md:flex hidden justify-end items-center flex-1">
@@ -34,9 +34,9 @@ const Navbar = () => {
 
       {/* Header Responsive Bars Menu */}
       <div className="md:hidden flex flex-1 justify-end items-start">
-        <FontAwesomeIcon icon={togglNav ? faXmark : faBarsStaggered} size="xl" onClick={toggleMenu} className="transition-all duration-300 cursor-pointer" />
+        <FontAwesomeIcon icon={togglNav ? faXmark : faBarsStaggered} size="xl" onClick={toggleMenu} className="transition-all duration-300 cursor-pointer relative z-50" />
 
-        <div className={`${!togglNav ? 'hidden' : 'flex'} p-6 absolute top-20 right-0 left-0 z-50 my-8 w-full sidebar bg-[#090c18] sm:bg-[#0f111d]`}>
+        <div className={`${!togglNav ? 'hidden' : 'flex'} p-6 pt-32 absolute top-0 right-0 left-0 z-40 w-full sidebar bg-[#090c18] sm:bg-[#0f111d]`}>
           <ul className="list-none flex items-center flex-col gap-2 flex-1">
             {navigationLinks.map(({ id, name }, i) => (
               <li key={i}
